@@ -51,7 +51,7 @@ Before installing or building this package, ensure your system meets the followi
 
 - **Set up Flathub repository and SDK (Required for building):**
   ```bash
-  flatpak remote-add --if-not-exists flathub [https://dl.flathub.org/repo/flathub.flatpakrepo](https://dl.flathub.org/repo/flathub.flatpakrepo)
+  flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   flatpak install flathub org.freedesktop.Platform//25.08 org.freedesktop.Sdk//25.08
   ```
 
