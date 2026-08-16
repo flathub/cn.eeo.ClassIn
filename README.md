@@ -22,58 +22,90 @@ Before installing or building this package, ensure your system meets the followi
 - **Architecture**: `x86_64`
 - **flatpak-builder** *(only required if building from source)*: `flatpak-builder` package installed
 
-### Installing Flatpak, flatpak-builder and the Sdk:
+### Installing Flatpak:
 
 - **Debian / Ubuntu:**
   ```bash
-  sudo apt update && sudo apt install flatpak flatpak-builder
+  sudo apt update && sudo apt install flatpak
   ```
 
 - **Fedora / Red Hat:**
   ```bash
-  sudo dnf install flatpak flatpak-builder
+  sudo dnf install flatpak
   ```
 
 - **Arch Linux / Manjaro:**
   ```bash
-  sudo pacman -Syu flatpak flatpak-builder
+  sudo pacman -Syu flatpak
   ```
 
 - **openSUSE (Leap / Tumbleweed):**
   ```bash
-  sudo zypper in flatpak flatpak-builder
+  sudo zypper in flatpak
   ```
 
 - **Gentoo:**
   ```bash
-  sudo emerge --ask sys-apps/flatpak dev-util/flatpak-builder
+  sudo emerge --ask sys-apps/flatpak 
   ```
 
-- **Set up Flathub repository and SDK (Required for building):**
+- **Set up Flathub repository:**
   ```bash
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-  flatpak install flathub org.freedesktop.Platform//25.08 org.freedesktop.Sdk//25.08
   ```
-
-*Note: You can remove flatpak-builder and the Sdk runtime from your package manager command line or after building if you installing from Flathub or they are no longer needed.*
 
 ### Installation
 
-If installing from Flathub:
+Install from Flathub:
 ```
 flatpak install flathub cn.eeo.ClassIn
 ```
-Or locally build a Flatpak package:
-```
-flatpak-builder --force-clean build-dir cn.eeo.ClassIn.json                     
-flatpak-builder --user --install --force-clean build-dir cn.eeo.ClassIn.json
-```
-Running ClassIn
+
+### Build from source
+
+- **Debian / Ubuntu:**
+  ```bash
+  sudo apt update && sudo apt install flatpak-builder
+  ```
+
+- **Fedora / Red Hat:**
+  ```bash
+  sudo dnf install flatpak-builder
+  ```
+
+- **Arch Linux / Manjaro:**
+  ```bash
+  sudo pacman -Syu flatpak-builder
+  ```
+
+- **openSUSE (Leap / Tumbleweed):**
+  ```bash
+  sudo zypper in flatpak-builder
+  ```
+
+- **Gentoo:**
+  ```bash
+  sudo emerge --ask dev-util/flatpak-builder
+  ```
+
+- **Install the Sdk:**
+  ```bash
+  flatpak install flathub org.freedesktop.Platform//25.08 org.freedesktop.Sdk//25.08
+  ```
+
+- **Locally build a Flatpak package :**
+  ```bash  
+  flatpak-builder --force-clean build-dir cn.eeo.ClassIn.json                     
+  flatpak-builder --user --install --force-clean build-dir cn.eeo.ClassIn.json
+  ```
+*Note: You can remove flatpak-builder and the Sdk runtime after building or they are no longer needed.*
+
+### Running ClassIn
 ```
 flatpak run cn.eeo.ClassIn
 ```
 
-### 📄 License
+## 📄 License
 
 This wrapper is licensed under the GPL-3.0-only license.
 
