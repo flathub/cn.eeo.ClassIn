@@ -40,21 +40,19 @@
   <summary>One-stop interactive online classroom platform</summary>
 
   <description>
-    <p>ClassIn is an interactive online classroom platform designed for education, providing live video teaching, interactive whiteboards, and class management tools.</p>
-    <p xml:lang="ar">ClassIn هي منصة فصول دراسية تفاعلية عبر الإنترنت مصممة للتعليم، وتوفر التدريس عبر الفيديو المباشر، وسبورات بيضاء تفاعلية، وأدوات إدارة الفصول الدراسية.</p>
-    <p xml:lang="bn">ClassIn হল একটি ইন্টারেক্টিভ অনলাইন ক্লাসরুম প্ল্যাটফর্ম যা শিক্ষার জন্য তৈরি, যেখানে রয়েছে লাইভ ভিডিও টিচিং, ইন্টারেক্টিভ হোয়াইটবোর্ড এবং ক্লাস ম্যানেজমেন্ট টুলস।</p>
-    <p xml:lang="es">ClassIn es una plataforma de aula en línea interactiva diseñada para la educación, que ofrece enseñanza por video en vivo, pizarras interactivas y herramientas de gestión de clases.</p>
-    <p xml:lang="fr">ClassIn est une plateforme de classe en ligne interactive conçue pour l'éducation, offrant un enseignement vidéo en direct, des tableaux blancs interactifs et des outils de gestion de classe.</p>
-    <p xml:lang="hi">ClassIn शिक्षा के लिए डिज़ाइन किया गया एक इंटरैक्टिव ऑनलाइन कक्षा प्लेटफॉर्म है, जो लाइव वीडियो शिक्षण, इंटरैक्टिव व्हाइटबोर्ड और कक्षा प्रबंधन उपकरण प्रदान करता है।</p>
-    <p xml:lang="id">ClassIn adalah platform ruang kelas online interaktif yang dirancang untuk pendidikan, menyediakan pengajaran video langsung, papan tulis interaktif, dan alat manajemen kelas.</p>
-    <p xml:lang="pt_BR">O ClassIn é uma plataforma de sala de aula online interativa projetada para educação, oferecendo ensino por vídeo ao vivo, quadros brancos interativos e ferramentas de gestão de aulas.</p>
-    <p xml:lang="ro">ClassIn este o platformă interactivă de clasă online concepută pentru educație, oferind predare video în direct, table interactive și instrumente de gestionare a claselor.</p>
-    <p xml:lang="th">ClassIn เป็นแพลตฟอร์มห้องเรียนออนไลน์แบบโต้ตอบที่ออกแบบมาเพื่อการศึกษา โดยให้บริการการสอนผ่านวิดีโอสด ไวท์บอร์ดโต้ตอบ และเครื่องมือจัดการห้องเรียน</p>
-    <p xml:lang="vi">ClassIn là nền tảng lớp học trực tuyến tương tác toàn diện dành cho giáo dục, cung cấp công cụ giảng dạy qua video trực tiếp, bảng trắng tương tác và quản lý lớp học.</p>
-    <p xml:lang="zh_CN">ClassIn 是一款专业在线互动教室软件，为在线教育提供集在线 LMS、互动白板和实时音视频在线教学于一体的解决方案。</p>
-    <p xml:lang="zh_TW">ClassIn 是一款專業線上互動教室軟體，為線上教育提供集線上 LMS、互動白板和即時音視訊線上教學於一體的解決方案。</p>
-    
-    <p>This is an unofficial Flatpak wrapper and is not affiliated with, supported, or endorsed by Empower Education Online Ltd.</p>
+    <p>ClassIn is an interactive online classroom platform designed for education, providing live video teaching, interactive whiteboards, and class management tools. If you use immutable operating systems, this unofficial Flatpak package is for you.</p>
+    <p xml:lang="ar">ClassIn هي منصة فصول دراسية تفاعلية عبر الإنترنت مصممة للتعليم، وتوفر التدريس عبر الفيديو المباشر، وسبورات بيضاء تفاعلية، وأدوات إدارة الفصول الدراسية. إذا كنت تستخدم أنظمة تشغيل غير قابلة للتغيير، فهذه حزمة Flatpak غير رسمية مخصصة لك.</p>
+    <p xml:lang="bn">ClassIn হল একটি ইন্টারেক্টিভ অনলাইন ক্লাসরুম প্ল্যাটফর্ম যা শিক্ষার জন্য তৈরি, যেখানে রয়েছে লাইভ ভিডিও টিচিং, ইন্টারেক্টিভ হোয়াইটবোর্ড এবং ক্লাস ম্যানেজমেন্ট টুলস। আপনি যদি কোনো পরিবর্তনহীন অপারেটিং সিস্টেম ব্যবহার করেন, তবে এই অননুমোদিত Flatpak প্যাকেজটি আপনার জন্য।</p>
+    <p xml:lang="es">ClassIn es una plataforma de aula en línea interactiva diseñada para la educación, que ofrece enseñanza por video en vivo, pizarras interactivas y herramientas de gestión de clases. Si usas sistemas operativos inmutables, este paquete Flatpak no oficial es para ti.</p>
+    <p xml:lang="fr">ClassIn est une plateforme de classe en ligne interactive conçue pour l'éducation, offrant un enseignement vidéo en direct, des tableaux blancs interactifs et des outils de gestion de classe. Si vous utilisez des systèmes d'exploitation immuables, ce paquet Flatpak non officiel est fait pour vous.</p>
+    <p xml:lang="hi">ClassIn शिक्षा के लिए डिज़ाइन किया गया एक इंटरैक्टिव ऑनलाइन कक्षा प्लेटफॉर्म है, जो लाइव वीडियो शिक्षण, इंटरैक्टिव व्हाइटबोर्ड और कक्षा प्रबंधन उपकरण प्रदान करता है। यदि आप अपरिवर्तनीय ऑपरेटिंग सिस्टम का उपयोग करते हैं, तो यह गैर-आधिकारिक Flatpak पैकेज आपके लिए है।</p>
+    <p xml:lang="id">ClassIn adalah platform ruang kelas online interaktif yang dirancang untuk pendidikan, menyediakan pengajaran video langsung, papan tulis interaktif, dan alat manajemen kelas. Jika Anda menggunakan sistem operasi tidak dapat diubah, paket Flatpak tidak resmi ini cocok untuk Anda.</p>
+    <p xml:lang="pt_BR">O ClassIn é uma plataforma de sala de aula online interativa projetada para educação, oferecendo ensino por vídeo ao vivo, quadros brancos interativos e ferramentas de gestão de aulas. Se você usa sistemas operacionais imutáveis, este pacote Flatpak não oficial é para você.</p>
+    <p xml:lang="ro">ClassIn este o platformă interactivă de clasă online concepută pentru educație, oferind predare video în direct, table interactive și instrumente de gestionare a claselor. Dacă folosești sisteme de operare imutabile, acest pachet Flatpak neoficial este pentru tine.</p>
+    <p xml:lang="th">ClassIn เป็นแพลตฟอร์มห้องเรียนออนไลน์แบบโต้ตอบที่ออกแบบมาเพื่อการศึกษา โดยให้บริการการสอนผ่านวิดีโอสด ไวท์บอร์ดโต้ตอบ และเครื่องมือจัดการห้องเรียน หากคุณใช้ระบบปฏิบัติการแบบเปลี่ยนแปลงไม่ได้ แพ็กเกจ Flatpak ที่ไม่เป็นทางการนี้เหมาะสำหรับคุณ</p>
+    <p xml:lang="vi">ClassIn là nền tảng lớp học trực tuyến tương tác toàn diện dành cho giáo dục, cung cấp công cụ giảng dạy qua video trực tiếp, bảng trắng tương tác và quản lý lớp học. Nếu bạn dùng những hệ điều hành bất biến thì đây là bản Flatpak không chính thức dành cho bạn.</p>
+    <p xml:lang="zh_CN">ClassIn 是一款专业在线互动教室软件，为在线教育提供集在线 LMS、互动白板和实时音视频在线教学于一体的解决方案。如果您使用的是不可变操作系统，此非官方 Flatpak 版本将是您的理想之选。</p>
+    <p xml:lang="zh_TW">ClassIn 是一款專業線上互動教室軟體，為線上教育提供集線上 LMS、互動白板和即時音視訊線上教學於一體的解決方案。如果您使用的是不可變作業系統，此非官方 Flatpak 版本將是您的理想之選。</p>
   </description>
   
   <launchable type="desktop-id">cn.eeo.ClassIn.desktop</launchable>
@@ -78,7 +76,7 @@
     <name>Empower Education Online Ltd.</name>
   </developer>
   <url type="homepage">https://www.classin.com/</url>
-  <url type="help">https://www.classin.com/support/</url>
+  <url type="help">https://flowin.cn/publish/0f7e1efb44414b97a3ca74ed69bf48f4/6046a57aa2944dd88ef7e49e053d92a9</url>
 
   <releases>
     <release version="6.0.8.2738" date="2026-08-10">
