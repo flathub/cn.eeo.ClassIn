@@ -53,8 +53,6 @@
     <p xml:lang="vi">ClassIn là nền tảng lớp học trực tuyến tương tác toàn diện dành cho giáo dục, cung cấp công cụ giảng dạy qua video trực tiếp, bảng trắng tương tác và quản lý lớp học.</p>
     <p xml:lang="zh_CN">ClassIn 是一款专业在线互动教室软件，为在线教育提供集在线 LMS、互动白板和实时音视频在线教学于一体的解决方案。</p>
     <p xml:lang="zh_TW">ClassIn 是一款專業線上互動教室軟體，為線上教育提供集線上 LMS、互動白板和即時音視訊線上教學於一體的解決方案。</p>
-    
-    <p>This is an unofficial Flatpak wrapper and is not affiliated with, supported, or endorsed by Empower Education Online Ltd.</p>
   </description>
   
   <launchable type="desktop-id">cn.eeo.ClassIn.desktop</launchable>
@@ -78,7 +76,7 @@
     <name>Empower Education Online Ltd.</name>
   </developer>
   <url type="homepage">https://www.classin.com/</url>
-  <url type="help">https://www.classin.com/support/</url>
+  <url type="help">https://flowin.cn/publish/0f7e1efb44414b97a3ca74ed69bf48f4/6046a57aa2944dd88ef7e49e053d92a9</url>
 
   <releases>
     <release version="6.0.8.2738" date="2026-08-10">
