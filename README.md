@@ -104,6 +104,15 @@ flatpak install flathub cn.eeo.ClassIn
 ```
 flatpak run cn.eeo.ClassIn
 ```
+## 🤝 Contributing
+
+Contributions are always welcome! You can help by:
+- Reporting issues (crashes, problems, missing fonts/libs).
+- Submitting PRs to update the runtime version or the wrapper.
+- Improving metadata or manifest.
+
+Want to become a **co-maintainer**? If you use ClassIn on Linux regularly, you can join in and help maintain this package!
+Feel free to open an issue or submit a PR anytime!
 
 ## 📄 License
 
