@@ -3,6 +3,9 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
+    "tags": [
+        "proprietary"
+    ],
     "command": "classin-wrapper",
     "finish-args": [
        "--share=network",

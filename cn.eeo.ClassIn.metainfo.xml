@@ -72,7 +72,7 @@
     </screenshot>
   </screenshots>
 
-  <developer id="cn.eeo">
+  <developer id="eeo.cn">
     <name>Empower Education Online Ltd.</name>
   </developer>
   <url type="homepage">https://www.classin.com/</url>
@@ -92,7 +92,13 @@
     </release>
   </releases>
 
-  <content_rating type="oars-1.1"/>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">moderate</content_attribute>
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="social-audio">moderate</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">intense</content_attribute>
+  </content_rating>
 
   <recommends>
     <internet>always</internet>
