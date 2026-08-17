@@ -72,11 +72,13 @@
     </screenshot>
   </screenshots>
 
-  <developer id="cn.eeo">
+  <developer id="eeo.cn">
     <name>Empower Education Online Ltd.</name>
   </developer>
   <url type="homepage">https://www.classin.com/</url>
+  <url type="homepage" xml:lang="zh_CN">https://www.eeo.cn/</url>
   <url type="help">https://flowin.cn/publish/0f7e1efb44414b97a3ca74ed69bf48f4/6046a57aa2944dd88ef7e49e053d92a9</url>
+  <url type="help" xml:lang="zh_CN">https://flowin.cn/publish/c3ab35aafc9442a08cd78f700c6a02f3/568cbe38b29d4e51a6509bc946fb6661</url>
 
   <releases>
     <release version="6.0.8.2738" date="2026-08-10">
@@ -92,7 +94,14 @@
     </release>
   </releases>
 
-  <content_rating type="oars-1.1"/>
+  <content_rating type="oars-1.1">
+    <content_attribute id="money-purchasing">intense</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-video">intense</content_attribute>
+    <content_attribute id="social-info">intense</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+  </content_rating>
 
   <recommends>
     <internet>always</internet>
