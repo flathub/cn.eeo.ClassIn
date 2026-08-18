@@ -7,7 +7,7 @@ This is an unofficial Flatpak wrapper for ClassIn.
 Since ClassIn only officially provides `.deb` packages (which cannot be installed directly on Red Hat, SUSE, Arch, Gentoo-based, or immutable Linux distributions), this wrapper packages and extracts the official `.deb` binaries directly within the Flatpak sandbox.
 
 ## ⚠️ Known Issues
-  - **Screen sharing does not work on Wayland:** This is an upstream issue from ClassIn (EEO). The client lacks `libqwayland.so` implementation, resulting in a black screen when attempting to share. A temporary workaround is running your session on X11.
+  - **Screen sharing does not work on Wayland:** This is an upstream issue from ClassIn (EEO). The client lacks QtWayland and xdg-desktop-portal implementation, resulting in a black screen when attempting to share. A temporary workaround is running your session on X11, or use WMs or DEs that support it if your current DE removed X11 support (I will recommend WMs, for example, Openbox or i3).
   
 If you encounter any other issues, please report them on [GitHub Issues](https://github.com/imngkhang/classin-flatpak-wrapper/issues).
 
@@ -17,10 +17,10 @@ If you encounter any other issues, please report them on [GitHub Issues](https:/
 
 Before installing or building this package, ensure your system meets the following requirements:
 
-- **Flatpak**: `v1.0` or newer
-- **Display Server**: X11 (Recommended) or Wayland (with limitations)
-- **Architecture**: `x86_64`
-- **flatpak-builder** *(only required if building from source)*: `flatpak-builder` package installed
+- **Flatpak**: `flatpak` 1.12 or above (if it too old you can [compile it](https://github.com/flatpak/flatpak).)
+- **Display Server**: X11 (recommended) or Wayland (with limitations)
+- **Architecture**: `x86_64` or `aarch64`
+- **flatpak-builder** *(only required if building from source)*: `flatpak-builder` 1.2 or above
 
 ### Installing Flatpak:
 
@@ -93,7 +93,6 @@ flatpak install flathub cn.eeo.ClassIn
 
 - **Locally build a Flatpak package :**
   ```bash  
-  flatpak-builder --force-clean build-dir cn.eeo.ClassIn.json                     
   flatpak-builder --user --install --force-clean build-dir cn.eeo.ClassIn.json
   ```
 *Note: You can remove flatpak-builder and the Sdk runtime after building or they are no longer needed.*
