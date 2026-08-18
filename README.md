@@ -54,10 +54,8 @@ Before installing or building this package, ensure your system meets the followi
   flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
   ```
 
-### Installation
-
-Install from Flathub:
-```
+### Install from Flathub:
+```bash
 flatpak install flathub cn.eeo.ClassIn
 ```
 
@@ -101,9 +99,10 @@ flatpak install flathub cn.eeo.ClassIn
 *Note: You can remove flatpak-builder and the Sdk runtime after building or they are no longer needed.*
 
 ### Running ClassIn
-```
+```bash
 flatpak run cn.eeo.ClassIn
 ```
+
 ## 🤝 Contributing
 
 Contributions are always welcome! You can help by:
@@ -112,6 +111,7 @@ Contributions are always welcome! You can help by:
 - Improving metadata or manifest.
 
 Want to become a **co-maintainer**? If you use ClassIn on Linux regularly, you can join in and help maintain this package!
+
 Feel free to open an issue or submit a PR anytime!
 
 ## 📄 License
