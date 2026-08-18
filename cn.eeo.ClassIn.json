@@ -64,8 +64,7 @@
                 "install -d /app/share/icons/hicolor/scalable/apps",
                 "install -m644 classin.svg /app/share/icons/hicolor/scalable/apps/cn.eeo.ClassIn.svg",
                 "install -d /app/share/mime/packages",
-                "install -m644 cn.eeo.ClassIn.xml /app/share/mime/packages/cn.eeo.ClassIn.xml",
-                "update-mime-database /app/share/mime"
+                "install -m644 cn.eeo.ClassIn.xml /app/share/mime/packages/cn.eeo.ClassIn.xml"
             ]
         },
         {
