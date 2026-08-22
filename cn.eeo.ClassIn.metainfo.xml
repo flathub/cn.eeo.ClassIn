@@ -84,15 +84,9 @@
   <url type="help">https://flowin.cn/publish/0f7e1efb44414b97a3ca74ed69bf48f4/6046a57aa2944dd88ef7e49e053d92a9</url>
 
   <releases>
-    <release version="6.0.8.2738" date="2026-08-10">
+    <release version="6.0.8" date="2026-08-10">
       <description>
-        <p>ClassIn Linux release for aarch64 (ARM64).</p>
-      </description>
-    </release>
-
-    <release version="6.0.8.2737" date="2026-08-10">
-      <description>
-        <p>ClassIn Linux release for amd64 (x86_64).</p>
+        <p>ClassIn Flatpak release.</p>
       </description>
     </release>
   </releases>

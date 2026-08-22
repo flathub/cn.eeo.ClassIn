@@ -109,7 +109,7 @@ Contributions are always welcome! You can help by:
 - Submitting PRs to update the runtime version or the wrapper.
 - Improving metadata or manifest.
 
-Want to become a **co-maintainer**? If you use ClassIn on Linux regularly, you can join in and help maintain this package!
+Want to become a **co-maintainer**? If you use ClassIn on Linux regularly, you can join in and help maintain this package! See [this issue](https://github.com/flathub/cn.eeo.ClassIn/issues/5) for more info.
 
 Feel free to open an issue or submit a PR anytime!
 
