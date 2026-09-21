@@ -47,7 +47,6 @@
                 {
                     "type": "file",
                     "path": "cn.eeo.ClassIn.desktop"
-
                 },
                 {
                     "type": "file",
@@ -101,9 +100,9 @@
                     "only-arches": [
                         "x86_64"
                     ],
-                    "url": "https://www.eeo.cn/download/client/classin_6.0.8.2737_amd64.deb",
-                    "sha256": "c3e871eaf6f2810d0c9ffb16f4259a6a97784f6ed730f4227dddef6682d73e07",
-                    "size": 477240652,
+                    "url": "https://www.eeo.cn/download/client/classin_6.0.9.1757_amd64.deb",
+                    "sha256": "4331e636372929ec5d2cdc45da76a328a0cf82b37079d0acfe6c4a43e9d0ef28",
+                    "size": 691996184,
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://www.eeo.cn/sysshare/custom/download_conf.json",
@@ -117,9 +116,9 @@
                     "only-arches": [
                         "aarch64"
                     ],
-                    "url": "https://www.eeo.cn/download/client/classin_6.0.8.2738_arm64.deb",
-                    "sha256": "df9a9d9322a84e360388dbddc47de295ad71bc5ad61c993814c8804e6ffe5230",
-                    "size": 444679008,
+                    "url": "https://www.eeo.cn/download/client/classin_6.0.9.1758_arm64.deb",
+                    "sha256": "1ed8af2bd1d66847653e5a39c6a1f32a5347d01a7a439fd444a476187b833f8a",
+                    "size": 663746652,
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://www.eeo.cn/sysshare/custom/download_conf.json",
