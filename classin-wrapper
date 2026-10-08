@@ -14,11 +14,76 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.fsf.org/licenses/>.
 
-import os
-import sys
+import os, sys, shutil, subprocess
 
 # Path to AppRun inside /app/extra
 CLASSIN_APPRUN = "/app/extra/opt/apps/classin/ClassIn"
+
+def setup_bridge():
+    # Check if we are running under Wayland and if the bridge is not disabled
+    xdg_session_type = os.environ.get("XDG_SESSION_TYPE", "")
+    disable_bridge = os.environ.get("CLASSIN_BRIDGE_DISABLE")
+    bridge_so = "/app/bridge/screenproxy.so"
+    bridge_py = "/app/bridge/classin-bridge.py"
+
+    # Only set up the bridge if we are in a Wayland session, the bridge is not disabled, and the library exists
+    if xdg_session_type == "wayland" and not disable_bridge and os.path.isfile(bridge_so):
+        # Check for required commands before proceeding
+        required_cmds = ["Xvfb", "python3", "xdotool", "xrandr", "gst-launch-1.0"]
+        if all(shutil.which(cmd) is not None for cmd in required_cmds):
+            # Set up configuration directory and environment variables for the bridge
+            xdg_config_home = os.environ.get("XDG_CONFIG_HOME")
+            if not xdg_config_home:
+                xdg_config_home = os.path.expanduser("~/.config")
+            
+            cfg_dir = os.path.join(xdg_config_home, "ClassIn")
+            os.makedirs(cfg_dir, exist_ok=True)
+
+            # Clean up old log files by renaming them with a "-1" suffix
+            log_files = ["bridge-proxy.log", "bridge.log"]
+            for log_file in log_files:
+                full_log_path = os.path.join(cfg_dir, log_file)
+                
+                old_log_path = full_log_path.replace(".log", "-1.log")
+
+                # If the log file exists, rename it to the old log path
+                if os.path.isfile(full_log_path):
+                    try:
+                        shutil.move(full_log_path, old_log_path)
+                    except Exception as e:
+                        sys.stderr.write(f"Warning: Failed to cleanup log {log_file}: {e}\n")
+
+
+            os.environ["CLASSIN_PROXY_SRC"] = ":99"
+            os.environ["CLASSIN_PROXY_REQUEST"] = os.path.join(cfg_dir, "bridge-request")
+            os.environ["CLASSIN_PROXY_REGION"] = os.path.join(cfg_dir, "bridge-region")
+            os.environ["CLASSIN_PROXY_HEARTBEAT"] = os.path.join(cfg_dir, "bridge-heartbeat")
+            os.environ["CLASSIN_PROXY_STOP"] = os.path.join(cfg_dir, "bridge-stop")
+            os.environ["CLASSIN_PROXY_LOG"] = os.path.join(cfg_dir, "bridge-proxy.log")
+            os.environ["CLASSIN_BRIDGE_TOKEN"] = f"ci{os.getpid()}"
+
+            # Set LD_PRELOAD to include the bridge shared library
+
+            existing_preload = os.environ.get("LD_PRELOAD", "")
+            if existing_preload:
+                os.environ["LD_PRELOAD"] = f"{bridge_so}:{existing_preload}"
+            else:
+                os.environ["LD_PRELOAD"] = bridge_so
+
+            # Start the bridge Python script in the background and redirect output to a log file
+
+            if os.path.isfile(bridge_py):
+                log_file_path = os.path.join(cfg_dir, "bridge.log")
+                try:
+                    log_file = open(log_file_path, "a")
+                    subprocess.Popen(
+                        [sys.executable, bridge_py],
+                        stdout=log_file,
+                        stderr=subprocess.STDOUT,
+                        start_new_session=True
+                    )
+                except Exception as e:
+                    sys.stderr.write(f"Warning: Failed to start classin-bridge.py: {e}\n")
 
 
 def main():
@@ -29,6 +94,10 @@ def main():
             "Make sure 'apply_extra' completed successfully during Flatpak installation.\n"
         )
         sys.exit(1)
+
+    # Run the bridge
+
+    setup_bridge()
 
     cmd = [CLASSIN_APPRUN] + sys.argv[1:]
 

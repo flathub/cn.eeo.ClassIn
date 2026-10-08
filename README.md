@@ -7,7 +7,8 @@ This is an unofficial Flatpak wrapper for ClassIn.
 Since ClassIn only officially provides `.deb` packages (which cannot be installed directly on Red Hat, SUSE, Arch, Gentoo-based, or immutable Linux distributions), this wrapper packages and extracts the official `.deb` binaries directly within the Flatpak sandbox.
 
 ## ⚠️ Known Issues
-  - **Screen sharing does not work on Wayland:** This is an upstream issue from ClassIn (EEO). The client lacks QtWayland and xdg-desktop-portal implementation, resulting in a black screen when attempting to share. A temporary workaround is running your session on X11, or use WMs or DEs that support it if your current DE removed X11 support (I will recommend WMs, for example, Openbox or i3).
+  - **✅ Fixed: Screen sharing does not work on Wayland:** Thanks to [@collyn](https://github.com/collyn) to setting up a Wayland screen-sharing bridge. The app now can share the screen on Wayland seamlessly. See [PR #3](https://github.com/imngkhang/classin-appimage-wrapper/pull/3) and [Issue #2](https://github.com/imngkhang/classin-appimage-wrapper/issues/2) for more info, all are on [my sister projects](https://github.com/imngkhang/classin-appimage-wrapper).
+  - **Cannot record the lesson on ClassIn 6.0.9 and above:** The new ClassIn 6.0.9 has partial support for Wayland, on the *Lesson recording* feature, but the Flatpak sandbox limits some buses, so the recording fails every time. Please use [the AppImage version](https://github.com/imngkhang/classin-appimage-wrapper), if you need to record the lessons (or if you are in EEO's ClassIn team, please tell me the bus on [GitHub Issues](https://github.com/flathub/cn.eeo.ClassIn/issues)).
   
 If you encounter any other issues, please report them on [GitHub Issues](https://github.com/flathub/cn.eeo.ClassIn/issues).
 
