@@ -8,7 +8,7 @@ Since ClassIn only officially provides `.deb` packages (which cannot be installe
 
 ## ⚠️ Known Issues
   - **✅ Fixed: Screen sharing does not work on Wayland:** Thanks to [@collyn](https://github.com/collyn) to setting up a Wayland screen-sharing bridge. The app now can share the screen on Wayland seamlessly. See [PR #3](https://github.com/imngkhang/classin-appimage-wrapper/pull/3) and [Issue #2](https://github.com/imngkhang/classin-appimage-wrapper/issues/2) for more info, all are on [my sister projects](https://github.com/imngkhang/classin-appimage-wrapper).
-  - **Cannot record the lesson on ClassIn 6.0.9 and above:** The new ClassIn 6.0.9 has partial support for Wayland, on the *Lesson recording* feature, but the Flatpak sandbox limits some buses, so the recording fails every time. Please use [the AppImage version](https://github.com/imngkhang/classin-appimage-wrapper), if you need to record the lessons (or if you are in EEO's ClassIn team, please tell me the bus on [GitHub Issues](https://github.com/flathub/cn.eeo.ClassIn/issues)).
+  - **➖ Partly-fixed: Cannot record the lesson on ClassIn 6.0.9 and above:** The new ClassIn 6.0.9 has partial support for Wayland, on the *Lesson recording* feature, but the Flatpak sandbox limits some buses, so the recording fails in distros like Ubuntu 24.04. Please use [the AppImage version](https://github.com/imngkhang/classin-appimage-wrapper) or upgrade your distro, if you need to record the lessons.
   
 If you encounter any other issues, please report them on [GitHub Issues](https://github.com/flathub/cn.eeo.ClassIn/issues).
 
